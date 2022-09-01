@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 20%;
+  min-height: 10vh;
+  background: rgba(255, 255, 255, .6);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+nav,
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: .9rem;
+}
+
+.nav-links a,
+.nav-links button {
+  margin-left: 2rem;
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+}

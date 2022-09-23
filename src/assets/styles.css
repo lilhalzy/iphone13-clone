@@ -164,3 +164,62 @@ a {
   font-size: .8rem;
   font-weight: bold;
 }
+
+/* forth page */
+.forth-page {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.purchase-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex: 1;
+}
+
+.phone-gallery {
+  display: flex;
+  align-self: flex-start;
+}
+
+.phone-gallery img {
+transform: scale(.8);
+}
+
+.phone-gallery-container {
+  min-width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swatch-container {
+  text-align: center;
+}
+
+.swatch-container span {
+  font-size: .8rem;
+}
+
+.swatches img {
+  padding: 0 .3rem;
+  cursor: pointer;
+}
+
+.purchase-right {
+  flex: 1;
+  position: relative;
+  background: black;
+}
+
+.purchase-right img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%) scale(.8);
+  transform-origin: bottom;
+}

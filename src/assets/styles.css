@@ -263,13 +263,48 @@ transform: scale(.8);
   color: #fff;
 }
 
+/* sixth page */
+.sixth-page {
+  min-height: 100vh;
+  padding: 10% 20%;
+  justify-content: space-between;
+  position: relative;
+  display: flex;
+}
 
+.portrait {
+  height: 70vh;
+}
 
+.phone-title {
+  font-size: 2rem;
+}
 
+.photo-subtitle {
+  font-size: 4rem;
+}
+.phone-video {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
 
+.phone-video video {
+  position: absolute;
+} 
 
+.phone-video img {
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  transform: scale(.8);
+}
 
-
-
-
-
+.phone-video video {
+  left: 1.13rem;
+  bottom: 1.26rem;
+  transform: scale(.8);
+  border-radius: 2.5rem;
+}

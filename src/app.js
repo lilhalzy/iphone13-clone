@@ -53,3 +53,18 @@ tlTwoRemove.to(
   ".highlight",
   { color: "rgba(255, 255, 255, 0.4", stagger: 1}
 )
+
+// page 3 - split
+const tlThree = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".third-page",
+    start: "-25%",
+    end: "30%",
+    scrub: true
+  }
+})
+
+tlThree.fromTo('.large-phone', {x: '40%'}, {x: '20%'})
+tlThree.fromTo('.small-phone', {x: '-40%'}, {x: '-20%'}, '<')
+tlThree.fromTo('.product-txt-left', {x: 50, opacity: 0}, {x: 0, opacity: 1}, '<')
+tlThree.fromTo('.product-txt-right', {x: -50, opacity: 0}, {x: 0, opacity: 1}, '<')

@@ -58,13 +58,13 @@ tlTwoRemove.to(
 const tlThree = gsap.timeline({
   scrollTrigger: {
     trigger: ".third-page",
-    start: "-25%",
-    end: "30%",
+    start: "-30%",
+    end: "0%",
     scrub: true
   }
 })
 
-tlThree.fromTo('.large-phone', {x: '40%'}, {x: '20%'})
-tlThree.fromTo('.small-phone', {x: '-40%'}, {x: '-20%'}, '<')
+tlThree.fromTo('.large-phone', {x: '40%'}, {x: '35%'})
+tlThree.fromTo('.small-phone', {x: '-40%'}, {x: '-35%'}, '<')
 tlThree.fromTo('.product-txt-left', {x: 50, opacity: 0}, {x: 0, opacity: 1}, '<')
-tlThree.fromTo('.product-txt-right', {x: -50, opacity: 0}, {x: 0, opacity: 1}, '<')
+tlThree.fromTo('.product-txt-right', {x: -50, opacity: 0}, {x: 30, opacity: 1}, '<')

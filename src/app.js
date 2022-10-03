@@ -78,3 +78,32 @@ const tlThreePin = gsap.timeline({
     pinSpacing: false,
   }
 })
+
+// page 4 - carousel
+
+const swatches = document.querySelectorAll('.swatches img')
+const gallery = document.querySelector('.phone-gallery')
+const slides = document.querySelectorAll('.phone-gallery-container')
+
+let currentSwatch = 'blue'
+let topIndex = 2
+
+swatches.forEach((swatch, i) => {
+  const position = slides[i].getBoundingClientRect().left
+  
+  swatch.addEventListener('click', (e) => {
+    let swatchName = e.target.getAttribute('swatch')
+    let rightPanel = document.querySelector('.' + swatchName)
+
+    if(currentSwatch === swatchName) return
+
+    gsap.set(rightPanel, {zIndex: topIndex})
+    gsap.fromTo(rightPanel, {opacity: 0}, {opacity: 1, duration: 1})
+
+    // gallery
+    gsap.to(gallery, {x: -position, duration: 1, ease: 'back.out(1.1)'})
+
+    topIndex++
+    currentSwatch = swatchName
+  })
+})

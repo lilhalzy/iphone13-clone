@@ -264,6 +264,10 @@ transform: scale(.8);
   color: #fff;
 }
 
+.blue{
+  z-index: 1;
+}
+
 /* sixth page */
 .sixth-page {
   min-height: 100vh;

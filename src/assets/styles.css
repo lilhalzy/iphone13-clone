@@ -170,6 +170,7 @@ a {
   min-height: 100vh;
   display: flex;
   position: relative;
+  background: #fff;
 }
 
 .purchase-left {

@@ -68,3 +68,13 @@ tlThree.fromTo('.large-phone', {x: '40%'}, {x: '35%'})
 tlThree.fromTo('.small-phone', {x: '-40%'}, {x: '-35%'}, '<')
 tlThree.fromTo('.product-txt-left', {x: 50, opacity: 0}, {x: 0, opacity: 1}, '<')
 tlThree.fromTo('.product-txt-right', {x: -50, opacity: 0}, {x: 30, opacity: 1}, '<')
+
+const tlThreePin = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.third-page',
+    start: '0%',
+    end: '100%',
+    pin: true,
+    pinSpacing: false,
+  }
+})

@@ -107,3 +107,17 @@ swatches.forEach((swatch, i) => {
     currentSwatch = swatchName
   })
 })
+
+// page 5 - video scrolling
+const tlFifth = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.fifth-page',
+    start: '0%',
+    end: '100%',
+    scrub: true,
+    pin: true,
+  }
+})
+
+tlFifth.fromTo('.product-video', { currentTime: 0}, { currentTime: 2, duration: 10})
+tlFifth.fromTo('.product-info-container h3', {opacity: 0}, {opacity: 1, stagger: 3, duration: 5}, '<')

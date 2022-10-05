@@ -121,3 +121,18 @@ const tlFifth = gsap.timeline({
 
 tlFifth.fromTo('.product-video', { currentTime: 0}, { currentTime: 2, duration: 10})
 tlFifth.fromTo('.product-info-container h3', {opacity: 0}, {opacity: 1, stagger: 3, duration: 5}, '<')
+
+// page 6 - parallax
+const tlSixth = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sixth-page",
+    start: "-25%",
+    end: "50%",
+    markers: { startColor: "pink", endColor: "green" },
+    scrub: true,
+  },
+});
+
+tlSixth.fromTo('.photo-description', {y: 0}, {y: -80});
+tlSixth.fromTo('.portrait-container', {y: 0}, {y: -80}, '<');
+tlSixth.fromTo('.phone-video', {y: 0}, {y: -275}, '<')

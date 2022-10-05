@@ -25,7 +25,6 @@ const tlOnePin = gsap.timeline({
 const tlTwo = gsap.timeline({
   scrollTrigger: {
     trigger: '.second-page',
-    markers: { startColor: "white", endColor: "red"},
     scrub: true,
     start: "-35%",
     end: "35%",
@@ -42,7 +41,6 @@ tlTwo.fromTo(
 const tlTwoRemove = gsap.timeline({
   scrollTrigger: {
     trigger: ".second-page",
-    markers: { startColor: "pink", endColor: "green"},
     scrub: true,
     start: "0%",
     end: "60%",
@@ -128,7 +126,6 @@ const tlSixth = gsap.timeline({
     trigger: ".sixth-page",
     start: "-25%",
     end: "50%",
-    markers: { startColor: "pink", endColor: "green" },
     scrub: true,
   },
 });
